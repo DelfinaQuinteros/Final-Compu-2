@@ -3,7 +3,7 @@ import getopt
 import json
 import threading
 import sys
-from utils.logger import Logger
+from logger import Logger
 from Server.src.model.ticket import Ticket
 from Server.src.database import Database
 from Server.src.utils import parse_message, make_response
@@ -165,8 +165,10 @@ class ClientHandler:
                     response = make_response(
                         404, f'Command not found: {command}. Try again!')
                     self.socket.send(response.encode())
-        except SystemExit:
-            pass
+        except IndexError:
+            logger.info('No users connected! Bye!')
+            logger.info('Waiting for connections ...')
+
 
 
 class Server:
@@ -188,14 +190,18 @@ class Server:
         self.server.listen(5)
 
     def handle_accept(self):
-        logger.info('Accepting connections')
-        while True:
-            client, address = self.server.accept()
-            logger.info(f'Connection from {address[0]}:{address[1]}')
-            thread = threading.Thread(
-                target=ClientHandler, args=(client, address))
-            thread.start()
-
+        try:
+            logger.info('Accepting connections')
+            while True:
+                client, address = self.server.accept()
+                logger.info(f'Connection from {address[0]}:{address[1]}')
+                thread = threading.Thread(
+                    target=ClientHandler, args=(client, address))
+                thread.start()
+        except KeyboardInterrupt:
+            logger.info('KeyboardInterrupt')
+            self.server.close()
+            raise SystemExit
 
 if __name__ == "__main__":
 
@@ -214,5 +220,5 @@ if __name__ == "__main__":
                 debug = True
 
     Database()
-    logger = Logger(debug=debug or False)
+    logger = Logger(debug=True)
     Server(host, port)

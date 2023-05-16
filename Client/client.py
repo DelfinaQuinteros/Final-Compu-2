@@ -14,21 +14,26 @@ class Client:
         self.main()
 
     def main(self):
-        while True:
-            message = input('\n-> ')
-            if not message:
-                continue
-            self.sock.send(message.encode())
-            data = self.sock.recv(4096).decode()
-            status_code, response = parse_request(data)
+        try:
+            while True:
+                message = input('\n-> ')
+                if not message:
+                    continue
+                self.sock.send(message.encode())
+                data = self.sock.recv(4096).decode()
+                status_code, response = parse_request(data)
 
-            if status_code in [200, 201]:
-                print(response)
-            if status_code in [400, 404]:
-                print(response)
-            if status_code in [499]:
-                print(response)
-                break
+                if status_code in [200, 201]:
+                    print(response)
+                if status_code in [400, 404]:
+                    print(response)
+                if status_code in [499]:
+                    print(response)
+                    break
+        except KeyboardInterrupt:
+            print('\nClient disconnected!')
+            self.sock.close()
+            sys.exit(0)
 
 
 if __name__ == "__main__":

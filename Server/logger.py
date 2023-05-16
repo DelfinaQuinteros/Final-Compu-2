@@ -1,7 +1,7 @@
 import logging
 
 
-class Logger():
+class Logger:
     def __init__(self, debug=False):
         self.logger = logging.getLogger('Server')
         self.logger.setLevel(logging.INFO)
