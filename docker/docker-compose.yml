@@ -1,22 +1,5 @@
 version: '3.3'
 services:
-  mysql:
-    container_name: mysql
-    image:  mysql:latest
-    command: --default-authentication-plugin=mysql_native_password
-    ports:
-      - "3336:3306"
-    environment:
-      - MYSQL_USER=${MYSQL_USER}
-      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
-      - MYSQL_DATABASE=${MYSQL_DATABASE}
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
-    volumes:
-      - ~/mysql/_data:/var/lib/mysql
-    restart: always
-    networks:
-      - red
-
   server:
     container_name: ticket-server
     image: ticket-server:latest
@@ -29,6 +12,8 @@ services:
       - DATABASE_URL=mysql
       - DATABASE_USER=${MYSQL_USER}
       - DATABASE_PASSWORD=${MYSQL_PASSWORD}
+    volumes:
+      - /tmp/slack_bot/mysqld:/run/mysqld
     networks:
       - red
     restart: always

@@ -5,7 +5,7 @@ FROM python:3.8-alpine3.15
 WORKDIR /app
 
 # Copiar los archivos de la aplicación al directorio de trabajo
-COPY ../.. .
+COPY ../../.. .
 
 # Instalar las dependencias necesarias
 RUN pip install --no-cache-dir -r requirements.txt
@@ -18,4 +18,3 @@ EXPOSE 5000
 
 # Ejecutar la aplicación cuando el contenedor se inicie
 CMD ["python", "server.py"]
-

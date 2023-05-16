@@ -4,7 +4,7 @@ FROM python:3.8
 WORKDIR /app
 
 # Copiar los archivos de la aplicación al directorio de trabajo
-COPY . .
+COPY .. .
 
 # Instalar las dependencias necesarias
 RUN pip3 install --no-cache-dir -r requirements.txt

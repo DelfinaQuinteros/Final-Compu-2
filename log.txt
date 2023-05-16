@@ -6,3 +6,41 @@
 2023-05-08 20:12:13,843- [INFO] - (MainThread): Accepting connections
 2023-05-08 20:53:38,518- [INFO] - (MainThread): Socket created successfully on 127.0.0.1:8080!
 2023-05-08 20:53:38,518- [INFO] - (MainThread): Accepting connections
+2023-05-11 09:08:57,049- [INFO] - (MainThread): Socket created successfully on 127.0.0.1:8080!
+2023-05-11 09:08:57,049- [INFO] - (MainThread): Accepting connections
+2023-05-11 09:09:06,507- [INFO] - (MainThread): Socket created successfully on 127.0.0.1:8080!
+2023-05-11 09:09:06,507- [INFO] - (MainThread): Accepting connections
+2023-05-11 09:09:11,509- [INFO] - (MainThread): Connection from 127.0.0.1:42376
+2023-05-11 09:10:09,804- [INFO] - (Thread-1 (ClientHandler)): Executing command: create
+2023-05-11 09:10:09,835- [INFO] - (Thread-1 (ClientHandler)): Ticket created successfully by 127.0.0.1:42376!
+2023-05-11 09:15:03,605- [INFO] - (Thread-1 (ClientHandler)): Executing command: update
+2023-05-11 09:15:10,847- [INFO] - (MainThread): Socket created successfully on 127.0.0.1:8080!
+2023-05-11 09:15:10,847- [INFO] - (MainThread): Accepting connections
+2023-05-11 09:15:19,514- [INFO] - (MainThread): Connection from 127.0.0.1:35426
+2023-05-11 09:15:26,426- [INFO] - (Thread-1 (ClientHandler)): Executing command: update
+2023-05-11 09:16:02,504- [INFO] - (MainThread): Socket created successfully on 127.0.0.1:8080!
+2023-05-11 09:16:02,504- [INFO] - (MainThread): Accepting connections
+2023-05-11 09:16:04,754- [INFO] - (MainThread): Connection from 127.0.0.1:58618
+2023-05-11 09:16:18,747- [INFO] - (Thread-1 (ClientHandler)): Executing command: update
+2023-05-11 09:16:18,789- [INFO] - (Thread-1 (ClientHandler)): Ticket updated successfully by 127.0.0.1:58618!
+2023-05-11 09:19:03,422- [INFO] - (Thread-1 (ClientHandler)): Executing command: create
+2023-05-11 09:19:08,708- [INFO] - (MainThread): Connection from 127.0.0.1:37344
+2023-05-11 09:19:15,645- [INFO] - (MainThread): Socket created successfully on 127.0.0.1:8080!
+2023-05-11 09:19:15,645- [INFO] - (MainThread): Accepting connections
+2023-05-11 09:19:17,524- [INFO] - (MainThread): Socket created successfully on 127.0.0.1:8080!
+2023-05-11 09:19:17,524- [INFO] - (MainThread): Accepting connections
+2023-05-11 09:19:24,657- [INFO] - (MainThread): Connection from 127.0.0.1:60972
+2023-05-11 10:14:24,459- [INFO] - (MainThread): Socket created successfully on 127.0.0.1:8080!
+2023-05-11 10:14:24,460- [INFO] - (MainThread): Accepting connections
+2023-05-11 10:14:30,582- [INFO] - (MainThread): Connection from 127.0.0.1:50118
+2023-05-11 10:14:33,695- [INFO] - (Thread-1 (ClientHandler)): Executing command: list
+2023-05-11 10:15:57,503- [INFO] - (MainThread): Socket created successfully on 127.0.0.1:8080!
+2023-05-11 10:15:57,503- [INFO] - (MainThread): Accepting connections
+2023-05-11 10:16:04,575- [INFO] - (MainThread): Connection from 127.0.0.1:42188
+2023-05-11 10:16:14,685- [INFO] - (Thread-1 (ClientHandler)): Executing command: list
+2023-05-11 17:21:09,087- [INFO] - (MainThread): Socket created successfully on 127.0.0.1:8080!
+2023-05-11 17:21:09,087- [INFO] - (MainThread): Accepting connections
+2023-05-15 11:56:54,840- [INFO] - (MainThread): Socket created successfully on 127.0.0.1:8080!
+2023-05-15 11:56:54,840- [INFO] - (MainThread): Accepting connections
+2023-05-15 11:56:58,491- [INFO] - (MainThread): Connection from 127.0.0.1:46092
+2023-05-15 11:57:00,185- [INFO] - (Thread-1 (ClientHandler)): Executing command: list

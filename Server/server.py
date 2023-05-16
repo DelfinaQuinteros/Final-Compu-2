@@ -3,10 +3,10 @@ import getopt
 import json
 import threading
 import sys
-from logger import Logger
-from src.model.ticket import Ticket
-from src.database import Database
-from src.utils import parse_message, make_response
+from utils.logger import Logger
+from Server.src.model.ticket import Ticket
+from Server.src.database import Database
+from Server.src.utils import parse_message, make_response
 
 
 class ClientHandler:

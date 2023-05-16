@@ -23,7 +23,7 @@ To install and run this program you will need to have:
 The next step is the cloning of the repository:
 
 ```bash
-git clone https://github.com/bthecs/ticket-system.git
+git clone https://github.com/DelfinaQuinteros/Final-Compu-2.git
 ```
 Once the repository has been created, the virtual environment must be created within it:
 
@@ -33,7 +33,7 @@ python3 -m venv venv
 Once the virtual environment has been created, it must be activated as follows:
 
 ```bash
-source ven/bin/activate
+source venv/bin/activate
 ```
 once inside the environment, the last step is the installation of the requirements:
 
