@@ -108,7 +108,7 @@ Arguments:
 - -s: This argument is used to indicate the status to be assigned to the ticket.
 
 ```bash
-update -i 1 -t "title" -a "author" -d "description"
+update -i 1 -t "title" -d "description" -s "status"
 ```
 
 ### Delete
