@@ -9,7 +9,7 @@ class Logger:
         formatter = logging.Formatter(
             '%(asctime)s- [%(levelname)s] - (%(threadName)s): %(message)s')
 
-        file_handler = logging.FileHandler('../log.txt')
+        file_handler = logging.FileHandler('/home/delfina/Final-Compu-2/log.txt')
         file_handler.setFormatter(formatter)
         self.logger.addHandler(file_handler)
 

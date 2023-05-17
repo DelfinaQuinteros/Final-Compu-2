@@ -4,9 +4,9 @@ import json
 import threading
 import sys
 from logger import Logger
-from Server.src.model.ticket import Ticket
-from Server.src.database import Database
-from Server.src.utils import parse_message, make_response
+from src.model.ticket import Ticket
+from src.database import Database
+from src.utils import parse_message, make_response
 
 
 class ClientHandler:
@@ -80,7 +80,7 @@ class ClientHandler:
                     tickets = tickets.filter(Ticket.status.like(f'%{ar}%'))
                 if op == '-d':
                     tickets = tickets.filter(
-                        Ticket.date_created.like(f'%{ar}%'))
+                        Ticket.description.like(f'%{ar}%'))
 
         self.db.close()
         data = json.dumps(
@@ -166,8 +166,7 @@ class ClientHandler:
                         404, f'Command not found: {command}. Try again!')
                     self.socket.send(response.encode())
         except IndexError:
-            logger.info('No users connected! Bye!')
-            logger.info('Waiting for connections ...')
+            logger.info('Client disconnected!')
 
 
 

@@ -44,3 +44,49 @@
 2023-05-15 11:56:54,840- [INFO] - (MainThread): Accepting connections
 2023-05-15 11:56:58,491- [INFO] - (MainThread): Connection from 127.0.0.1:46092
 2023-05-15 11:57:00,185- [INFO] - (Thread-1 (ClientHandler)): Executing command: list
+2023-05-17 06:51:37,251- [INFO] - (MainThread): Socket created successfully on 127.0.0.1:8080!
+2023-05-17 06:51:37,258- [INFO] - (MainThread): Accepting connections
+2023-05-17 06:51:39,802- [INFO] - (MainThread): Connection from 127.0.0.1:48500
+2023-05-17 06:51:48,271- [INFO] - (Thread-1): Executing command: list
+2023-05-17 06:51:57,899- [INFO] - (MainThread): KeyboardInterrupt
+2023-05-17 06:51:59,613- [INFO] - (Thread-1): No users connected! Bye!
+2023-05-17 06:51:59,613- [INFO] - (Thread-1): Waiting for connections ...
+2023-05-17 06:56:20,645- [INFO] - (MainThread): Socket created successfully on 127.0.0.1:8080!
+2023-05-17 06:56:20,645- [INFO] - (MainThread): Accepting connections
+2023-05-17 07:04:45,997- [INFO] - (MainThread): Connection from 127.0.0.1:59374
+2023-05-17 07:04:48,054- [INFO] - (Thread-1 (ClientHandler)): Executing command: list
+2023-05-17 07:05:09,169- [INFO] - (MainThread): KeyboardInterrupt
+2023-05-17 07:05:39,555- [INFO] - (MainThread): Socket created successfully on 127.0.0.1:8080!
+2023-05-17 07:05:39,555- [INFO] - (MainThread): Accepting connections
+2023-05-17 07:05:49,054- [INFO] - (MainThread): Connection from 127.0.0.1:57414
+2023-05-17 07:05:51,070- [INFO] - (Thread-1 (ClientHandler)): Executing command: list
+2023-05-17 07:06:12,582- [INFO] - (MainThread): KeyboardInterrupt
+2023-05-17 07:06:23,799- [INFO] - (MainThread): Socket created successfully on 127.0.0.1:8080!
+2023-05-17 07:06:23,799- [INFO] - (MainThread): Accepting connections
+2023-05-17 07:06:27,617- [INFO] - (MainThread): KeyboardInterrupt
+2023-05-17 07:06:49,132- [INFO] - (MainThread): Socket created successfully on 192.0.0.1:8080!
+2023-05-17 07:06:57,228- [INFO] - (MainThread): Socket created successfully on 192.0.0.1:8089!
+2023-05-17 07:07:04,348- [INFO] - (MainThread): Socket created successfully on 192.0.0.2:8089!
+2023-05-17 07:07:11,692- [INFO] - (MainThread): Socket created successfully on 127.0.0.1:8080!
+2023-05-17 07:07:11,692- [INFO] - (MainThread): Accepting connections
+2023-05-17 07:07:15,211- [INFO] - (MainThread): KeyboardInterrupt
+2023-05-17 07:08:32,544- [INFO] - (MainThread): Socket created successfully on 127.0.0.1:8080!
+2023-05-17 07:08:32,544- [INFO] - (MainThread): Accepting connections
+2023-05-17 07:08:54,774- [INFO] - (MainThread): Connection from 127.0.0.1:56982
+2023-05-17 07:08:57,797- [INFO] - (Thread-1 (ClientHandler)): Executing command: list
+2023-05-17 07:09:03,894- [ERROR] - (Thread-1 (ClientHandler)): Command not found: list-s
+2023-05-17 07:09:15,468- [INFO] - (Thread-1 (ClientHandler)): Executing command: list
+2023-05-17 07:09:25,893- [INFO] - (Thread-1 (ClientHandler)): Executing command: delete
+2023-05-17 07:09:25,915- [INFO] - (Thread-1 (ClientHandler)): Ticket deleted successfully by 127.0.0.1:56982!
+2023-05-17 07:09:59,372- [INFO] - (MainThread): Connection from 127.0.0.1:40148
+2023-05-17 07:10:08,510- [INFO] - (Thread-2 (ClientHandler)): Executing command: list
+2023-05-17 07:10:11,322- [INFO] - (Thread-1 (ClientHandler)): Executing command: list
+2023-05-17 07:10:48,362- [INFO] - (MainThread): Connection from 127.0.0.1:42196
+2023-05-17 07:10:57,769- [INFO] - (Thread-3 (ClientHandler)): Executing command: list
+2023-05-17 07:11:04,628- [INFO] - (Thread-3 (ClientHandler)): No users connected! Bye!
+2023-05-17 07:11:04,629- [INFO] - (Thread-3 (ClientHandler)): Waiting for connections ...
+2023-05-17 07:11:07,993- [INFO] - (Thread-2 (ClientHandler)): No users connected! Bye!
+2023-05-17 07:11:07,993- [INFO] - (Thread-2 (ClientHandler)): Waiting for connections ...
+2023-05-17 07:11:13,017- [INFO] - (Thread-1 (ClientHandler)): No users connected! Bye!
+2023-05-17 07:11:13,018- [INFO] - (Thread-1 (ClientHandler)): Waiting for connections ...
+2023-05-17 07:11:15,715- [INFO] - (MainThread): KeyboardInterrupt

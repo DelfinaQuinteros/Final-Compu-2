@@ -1,7 +1,7 @@
 import sys
 import socket
 import getopt
-from Server.src.utils import parse_request
+from utils import parse_request
 
 
 class Client:
